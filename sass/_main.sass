@@ -1,0 +1,214 @@
+header
+  position: relative
+
+nav
+  height: 50px
+  background: black
+  position: fixed
+  width: 100%
+  z-index: 1
+
+.menu
+  display: flex
+  list-style-type: none
+  justify-content: space-between
+  padding: 13px 70px
+  margin: 0
+  
+  &_link
+    font-weight: 900
+    color: rgb(223, 134, 19)
+
+  &_item
+    border-right: 2px solid white
+    padding-right: 67px
+    &:last-child
+      border-right: none
+  .hamburger
+    display: none
+    
+
+.sabheader
+  background-color: rgba(0, 0, 0, 0.6)
+  height: 140px
+  position: absolute
+  width: 100%
+  top: 50px
+
+  .cont
+    margin-top: 40px
+    text-transform: uppercase
+    font-weight: 700
+    line-height: 31px
+
+  .sabheader_btn
+    width: 259px
+    height: 63px
+    font-weight: 400
+    font-size: 18px
+    text-transform: uppercase
+    margin-top: 30px
+    border: 2px solid green
+    background-color: $color
+
+    &:hover
+      background-color: green
+
+.promo
+  height: 800px
+  background: url(../img/moning.webp) center (center / cover) no-repeat
+
+.main
+  padding: 70px 0 70px 0
+  min-height: 700px
+  background-color: yellowgreen
+  z-index: 0
+
+  .main_bloc
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 40px
+
+    .main_raund
+      width: 100px
+      height: 100px
+      background-color: blue
+      border-radius: 100%
+      display: flex
+      justify-content: center
+      align-items: center
+      margin-right: 26px
+
+  .main_tit
+    text-transform: uppercase
+    font-weight: 900
+    text-align: center
+
+  .main_bloc .main_descr
+    width: 343px
+
+    .main_sabheader
+      color: red
+      font-weight: 900
+      line-height: 20px
+
+    .main_text
+      color: black
+      font-weight: 700
+      line-height: 20px
+.mobail
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 100%
+  min-height: 700px
+  background: url(../img/fon.jfif) center (center / cover) no-repeat
+  
+    
+  .mobail_item
+    position: relative
+    max-width: 325px
+    height: 145px
+    background-color: $color
+    margin-bottom: 40px
+    .mobail_text
+      color: black
+      text-transform: uppercase
+      font-weight: 900
+      text-align: center
+    .mobail_plus
+      display: flex
+      justify-content: center
+      align-items: center   
+      position: absolute
+      bottom: 50px
+      left: 50%
+      transform: translateX(-20px)
+      width: 40px
+      height: 40px
+      border-radius: 100%
+      background-color: #fff
+      cursor: pointer
+      &::before
+        content: ''
+        display: block
+        width: 14px
+        height: 2px
+        background-color: $color
+      &::after
+        content: ''
+        display: block
+        position: absolute
+        left: 50%
+        transform: translateX(-1px)
+        height: 14px
+        width: 2px
+        background-color: $color
+.finich
+  padding: 60px 0 65px 0
+  .text
+    @include box
+  
+  .finich_bloc
+    padding: 60px 0
+    .finich_headline
+      margin-bottom: 40px
+      text-align: center
+      color: red
+      text-decoration: uppercase
+    .finich_deskr
+      display: block
+      position: relative
+      margin-bottom: 50px
+      list-style-type: none
+      ::before
+        content: ''
+        display: block
+        width: 20px
+        height: 20px
+        background-color: $color
+        position: absolute
+        left: (-10px)
+        cursor: pointer
+      li 
+        margin-bottom: 20px
+    .finich_subheadline
+      margin-bottom: 40px
+      color: $color
+      text-decoration: uppercase
+  .warning
+    .finich_headline
+      color: #9b3838    
+    .finich_deskr
+      ::before
+        background-color: pink
+.icons
+  position: relative
+  min-height: 700px
+  padding: 60px 0
+  background-color: pink 
+  &_cont
+    min-height: 300px
+    background-color: red
+    margin-top: 30px    
+  &_left
+    position: absolute
+    left: 50px
+    top: 200px
+    display: flex
+    justify-content: space-evenly
+    width: 200px
+    height: 100px
+    .icons_round
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 40px
+      height: 40px
+      border-radius: 100%
+      background-color: black
+      .icons_img
+        span
+          color: #fff
+        
