@@ -1,0 +1,152 @@
+@media  ( max-width: 1199px  )
+  .menu
+    &_item
+      padding: 0
+      border: 0
+  .sabheader
+    .sabheader_btn
+      width: 200px
+  .main
+    .main_descr
+      width: 300px 
+
+
+
+@media  ( max-width: 992px  )
+  .menu
+    &_item
+      padding-right: 10px
+      border: none
+  .main
+    &_tit
+      padding-top: 50px
+    .main_bloc
+      flex-direction: column
+      .main_descr
+        margin-top: 20px    
+  .mobail
+    &_ter
+      font-size: 30px
+      padding-top: 50px
+  .finich
+    .text
+      font-size: 30px  
+
+
+
+
+@media  ( max-width: 776px  )
+  .menu
+    position: fixed
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    top: 0
+    left: -100%
+    width: 50%
+    height: 100vh
+    padding: 15px
+    background-color: rgba(0,0,0, .6)
+    transition: 0.7s
+    &_active
+      left: 0
+    &_item
+      margin: 10px
+      padding-right: 0
+      border: none
+    &_link
+      font-size: 30px
+  .hamburger
+      display: block
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      right: 10px
+      width: 26px
+      height: 12px
+
+      span
+        display: block
+        width: 100%
+        height: 2px
+        margin-bottom: 2px
+        background-color: #fff
+        transition: 0.7s all
+      
+      &_active
+        span
+          margin-bottom: -2px
+          &:nth-child(1)
+            transform: translateY(3px) rotate(-45deg) 
+          &:nth-child(2)
+            display: none
+          &:nth-child(3)
+            transform: translateY(3px) rotate(45deg)       
+  .sabheader
+    height: 100px
+    .cont
+      margin-top: 18px
+    .sabheader_btn
+      width: 130px
+      margin-top: 18px
+  .main
+    &_bloc
+      flex-direction: column
+      .main_descr
+        margin-top: 10px
+  .icons
+    &_left
+      flex-direction: column
+      height: 200px
+      .icons_round
+        margin-top: 10px
+  .mobail
+    &_item
+
+
+
+
+@media  ( max-width: 400px  )
+
+  nav
+    .menu
+      font-size: 15px
+      &_item
+        margin: 0
+
+    .hamburger
+      display: block
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      right: 10px
+      width: 26px
+      height: 12px
+
+      span
+        display: block
+        width: 100%
+        height: 2px
+        margin-bottom: 2px
+        background-color: #fff
+        transition: 0.7s all
+      
+      &_active
+        span
+          margin-bottom: -2px
+          &:nth-child(1)
+            transform: translateY(3px) rotate(-45deg) 
+          &:nth-child(2)
+            display: none
+          &:nth-child(3)
+            transform: translateY(3px) rotate(45deg) 
+  .sabheader
+    .sabheader_btn
+      &:hover
+        background-color: $color
+    .main
+      .main_bloc
+        .main_descr
+        width: 280px
+
+  
